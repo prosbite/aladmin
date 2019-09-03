@@ -25,6 +25,7 @@ Vue.component('alumnus-updates', require('./components/alumnus/AlumnusUpdates.vu
 
 Vue.component('company-visitor', require('./components/company/Visitor.vue').default);
 Vue.component('jobpost-list', require('./components/company/JobPostList.vue').default);
+Vue.component('jobpost-details', require('./components/company/JobPostDetails.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -33,4 +34,18 @@ Vue.component('jobpost-list', require('./components/company/JobPostList.vue').de
 
 const app = new Vue({
     el: '#app',
+
+    data: {
+        jobsPosted:{current:''},
+    },
+
+    methods: {
+        jobPost:function(id){
+            this.jobsPosted.current = id;
+        }
+    },
+
+    mounted(){
+        
+    }
 });
