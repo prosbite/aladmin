@@ -2081,6 +2081,57 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/company/JobPostDetails.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/company/JobPostDetails.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['jid'],
+  data: function data() {
+    return {};
+  },
+  methods: {},
+  mounted: function mounted() {}
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/company/JobPostList.vue?vue&type=script&lang=js&":
 /*!******************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/company/JobPostList.vue?vue&type=script&lang=js& ***!
@@ -2120,7 +2171,7 @@ __webpack_require__.r(__webpack_exports__);
         this.jobs.all = data;
 
         if (data.length > 0) {
-          this.jobs.current = data[0];
+          this.setJobPost(data[0]); // this.jobs.current = data[0];
         }
       }.bind(this));
     },
@@ -2130,6 +2181,10 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       return '';
+    },
+    setJobPost: function setJobPost(j) {
+      this.jobs.current = j;
+      this.$emit('set-job-post', j.jpost_id);
     }
   },
   mounted: function mounted() {
@@ -38387,6 +38442,117 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/company/JobPostDetails.vue?vue&type=template&id=d931bbfc&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/company/JobPostDetails.vue?vue&type=template&id=d931bbfc& ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "body c-sdark f-14 mb-15",
+        staticStyle: { "padding-right": "15px" }
+      },
+      [
+        _c("div", { staticClass: "oh mb-5" }, [
+          _c("h5", { staticClass: "c-bright-green f-18 mt-0 pull-left" }, [
+            _vm._v("Database Administrator")
+          ]),
+          _vm._v(" "),
+          _c("span", { staticClass: "c-bright-green f-11 pull-right" }, [
+            _vm._v("May 28, 2017    "),
+            _c("span", [_vm._v("9:06 AM")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "f-13 lh-17 mb-24" }, [
+          _vm._v(
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore voluptatibus, in perferendis, iusto debitis rerum dolorum quia voluptatem saepe atque commodi neque. Eius odio quas praesentium iste voluptatem, sapiente quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam dicta sapiente, deleniti rem magni illum commodi voluptas unde velit laudantium. Saepe quia et unde dolorum hic aut iste ea recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa adipisci repellendus autem ullam, eaque, reiciendis temporibus suscipit laboriosam consequatur nam magnam inventore natus distinctio. Repellat eos, atque possimus officia quisquam."
+          )
+        ]),
+        _vm._v(" "),
+        _c("h5", { staticClass: "c-bright-green mb-5 bold" }, [
+          _vm._v("Skill Requirements")
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "f-13 lh-17 mb-24" }, [
+          _vm._v(
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore voluptatibus, in perferendis, iusto debitis rerum dolorum quia voluptatem saepe atque commodi neque. Eius odio quas praesentium iste voluptatem, sapiente quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam dicta sapiente, deleniti rem magni illum commodi voluptas unde velit laudantium. Saepe quia et unde dolorum hic aut iste ea recusandae."
+          )
+        ]),
+        _vm._v(" "),
+        _c("h5", { staticClass: "c-bright-green mb-5 bold" }, [
+          _vm._v("Educational Requirements")
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "f-13 lh-17 mb-24" }, [
+          _vm._v(
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore voluptatibus, in perferendis, iusto debitis rerum dolorum quia voluptatem saepe atque commodi neque. Eius odio quas praesentium iste voluptatem, sapiente quaerat. "
+          )
+        ]),
+        _vm._v(" "),
+        _c("h5", { staticClass: "c-bright-green mb-5 bold" }, [
+          _vm._v("Years of Experience")
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "f-13 lh-17 mb-24" }, [
+          _vm._v(
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore voluptatibus, in perferendis, iusto debitis rerum dolorum quia voluptatem saepe atque commodi neque. Eius odio quas praesentium iste voluptatem, sapiente quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia commodi sint doloremque. Placeat quos consequuntur perferendis possimus modi, omnis dolor sequi facere recusandae! Enim cupiditate, ullam explicabo odio, quibusdam veritatis."
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "oh",
+            staticStyle: { "background-color": "#008C8C", padding: "0px 15px" }
+          },
+          [
+            _c(
+              "span",
+              {
+                staticClass: "pull-left mr-5",
+                staticStyle: { color: "#FFF", "font-size": "45px" }
+              },
+              [_vm._v("P")]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "mt-10" }, [
+              _c("span", { staticClass: "c-white f-12" }, [_vm._v("Salary")]),
+              _vm._v(" "),
+              _c("p", { staticClass: "c-white no-border f-18" }, [
+                _vm._v("30,000.00 - 50,000.00/Month")
+              ])
+            ])
+          ]
+        )
+      ]
+    )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/company/JobPostList.vue?vue&type=template&id=9cff31e4&":
 /*!**********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/company/JobPostList.vue?vue&type=template&id=9cff31e4& ***!
@@ -38421,7 +38587,7 @@ var render = function() {
             class: _vm.isActive(j.jpost_id),
             on: {
               click: function($event) {
-                _vm.jobs.current = j
+                return _vm.setJobPost(j)
               }
             }
           },
@@ -50724,6 +50890,7 @@ Vue.component('alumnus-component', __webpack_require__(/*! ./components/alumnus/
 Vue.component('alumnus-updates', __webpack_require__(/*! ./components/alumnus/AlumnusUpdates.vue */ "./resources/js/components/alumnus/AlumnusUpdates.vue")["default"]);
 Vue.component('company-visitor', __webpack_require__(/*! ./components/company/Visitor.vue */ "./resources/js/components/company/Visitor.vue")["default"]);
 Vue.component('jobpost-list', __webpack_require__(/*! ./components/company/JobPostList.vue */ "./resources/js/components/company/JobPostList.vue")["default"]);
+Vue.component('jobpost-details', __webpack_require__(/*! ./components/company/JobPostDetails.vue */ "./resources/js/components/company/JobPostDetails.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -50731,7 +50898,18 @@ Vue.component('jobpost-list', __webpack_require__(/*! ./components/company/JobPo
  */
 
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+  data: {
+    jobsPosted: {
+      current: ''
+    }
+  },
+  methods: {
+    jobPost: function jobPost(id) {
+      this.jobsPosted.current = id;
+    }
+  },
+  mounted: function mounted() {}
 });
 
 /***/ }),
@@ -50996,6 +51174,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnusUpdates_vue_vue_type_template_id_1fd366b2___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnusUpdates_vue_vue_type_template_id_1fd366b2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/company/JobPostDetails.vue":
+/*!************************************************************!*\
+  !*** ./resources/js/components/company/JobPostDetails.vue ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _JobPostDetails_vue_vue_type_template_id_d931bbfc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./JobPostDetails.vue?vue&type=template&id=d931bbfc& */ "./resources/js/components/company/JobPostDetails.vue?vue&type=template&id=d931bbfc&");
+/* harmony import */ var _JobPostDetails_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./JobPostDetails.vue?vue&type=script&lang=js& */ "./resources/js/components/company/JobPostDetails.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _JobPostDetails_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _JobPostDetails_vue_vue_type_template_id_d931bbfc___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _JobPostDetails_vue_vue_type_template_id_d931bbfc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/company/JobPostDetails.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/company/JobPostDetails.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/company/JobPostDetails.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_JobPostDetails_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./JobPostDetails.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/company/JobPostDetails.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_JobPostDetails_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/company/JobPostDetails.vue?vue&type=template&id=d931bbfc&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/company/JobPostDetails.vue?vue&type=template&id=d931bbfc& ***!
+  \*******************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_JobPostDetails_vue_vue_type_template_id_d931bbfc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./JobPostDetails.vue?vue&type=template&id=d931bbfc& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/company/JobPostDetails.vue?vue&type=template&id=d931bbfc&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_JobPostDetails_vue_vue_type_template_id_d931bbfc___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_JobPostDetails_vue_vue_type_template_id_d931bbfc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
