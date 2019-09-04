@@ -34,7 +34,7 @@
 											<li>Email: {{$company->email}}</li>
 										</ul>
 									</div>
-									<jobpost-details></jobpost-details>
+									<jobpost-details :jid="jobsPosted.current"></jobpost-details>
 									
 								</div>
 							</div>

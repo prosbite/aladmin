@@ -35,6 +35,9 @@ Route::get('company/company/applicants/{id}', 'CompanyController@applicants')->n
 Route::get('company/updates', 'CompanyController@updates')->name('company.updates');
 Route::get('company/ajx/companies', 'CompanyController@companies');
 Route::get('company/ajx/jobposts', 'CompanyController@jobposts');
+Route::get('company/ajx/jobpost', 'CompanyController@jobpostSingle');
+Route::get('company/ajx/applicants', 'CompanyController@fetchApplicants');
+
 
 Route::get('advertising', 'AdvertisingController@index')->name('advertising.home');
 Route::get('advertising/register/company', 'AdvertisingController@company')->name('advertising.register.company');
