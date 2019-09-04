@@ -73,4 +73,17 @@ class CompanyController extends Controller
         }
         return $jobposts;
     }
+
+    public function jobpostSingle(Request $request){
+        $jobpost = \App\JobPost::find($request->id);
+        if(!empty($jobpost)){
+            $jobpost->date_posted = Carbon::parse($jobpost->created_at)->format('F d, Y');
+            $jobpost->time_posted = Carbon::parse($jobpost->created_at)->format('h:i A');
+        }
+        return $jobpost;
+    }
+
+    public function fetchApplicants(Request $request){
+        return \App\JobApplicant::applicantByPost($request->id);
+    }
 }
